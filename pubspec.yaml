@@ -1,0 +1,45 @@
+name: yehenon_choir_mezmur
+description: "Yehenon Choir Mezmur Debter — Henon Choir Songbook. Browse, search, and favourite Amharic worship songs."
+publish_to: 'none'
+
+version: 1.0.1+2005
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.5+1
+  shared_preferences: ^2.5.5
+  google_fonts: ^8.2.1
+  share_plus: ^13.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.webp"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  color: "#060515"
+  image: "assets/images/splash_screen.webp"
+  fullscreen: true
+  android_12:
+    image: "assets/images/splash_screen.webp"
+    icon_background_color: "#060515"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/songs.json
+    - assets/images/app_icon.webp
+    - assets/images/splash_screen.webp
